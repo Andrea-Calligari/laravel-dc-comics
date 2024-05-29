@@ -1,13 +1,15 @@
 @extends('layout.app')
 
-@section('title', 'Welcome')
-
+@section('title', 'Home')
+<!-- 
 <h1 class="text-danger text-center py-5">Welcome to your Template Repository!!!</h1>
-<p class="text-center fs-3"> All front-end assets is set and ready for your new projects! Enjoy! </p>
-
+<p class="text-center fs-3"> All front-end assets is set and ready for your new projects! Enjoy! </p> -->
 
 
 @section('content')
+<div class="container">
 
-<a href="{{route('index')}}"><button>vai</button></a>
+    <h1 class=" text-center">Welcome Home!</h1>
+</div>
+
 @endsection

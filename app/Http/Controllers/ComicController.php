@@ -12,4 +12,10 @@ class ComicController extends Controller
         
         return view('pages.index', compact('comics'));
     }
+    public function show(Comic $comic){
+        return view('pages.show', compact('comic'));
+    }
+    public function create(){
+        return view('pages.create');
+    }
 }

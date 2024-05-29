@@ -4,9 +4,10 @@
     
   
     @section('content');
-    
-    <h1>index.page</h1>
-<a href="{{route('home')}}"><button>vai</button></a>
+    <div class="container text-center">
 
+        <h1>index.page</h1>
+    </div>
+    
     @endsection
 
