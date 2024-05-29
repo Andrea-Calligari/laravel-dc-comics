@@ -22,13 +22,13 @@ Route::get('/', function () {
 // CRUD 
 
 //index
-
 Route::get('/comics',[ComicController::class, 'index'])->name('index');
 
 //show
-
 Route::get('/comic/show', [ComicController::class, 'show'])->name('show');
 
 //create
-
 Route::get('/comics/create', [ComicController::class,'create'])->name('create');
+
+//store
+Route::get('/comics/store', [ComicController::class,'store'])->name('store');

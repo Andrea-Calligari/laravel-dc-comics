@@ -6,6 +6,7 @@
                 <li> <a href="{{route('index')}}">Index</a></li>
                 <li> <a href="{{route('show')}}">Show</a></li>
                 <li> <a href="{{route('create')}}">Create</a></li>
+                <li> <a href="{{route('store')}}">Store</a></li>
                 
             </ul>
 
