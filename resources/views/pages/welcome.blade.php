@@ -9,5 +9,5 @@
 
 @section('content')
 
-
+<a href="{{route('index')}}"><button>vai</button></a>
 @endsection
