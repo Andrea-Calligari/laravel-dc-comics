@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('thumb')->nullable();
             $table->decimal('price', 7,2);
             $table->string('series', 150);
-            $table->dateTime('sale_date')->format('Y-m-d');
+            $table->date('sale_date')->format('Y-m-d');
             $table->string('type', 100);
-            $table->json('artists')->nullable();
+            $table->string('artists')->nullable();
             $table->string('writers',100)->nullable();
             $table->timestamps();
         });

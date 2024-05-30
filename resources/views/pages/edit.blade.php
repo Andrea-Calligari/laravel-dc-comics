@@ -1,12 +1,9 @@
-@extends('layout.app');
+@extends('layout.app')
 
-@section('title', 'Create');
+@section('content')
 
 
-@section('content');
-<div class="container text-center">
-
-    <h1>Crea un nuovo fumetto</h1>
+<h1>Modifica il tuo fumetto: {{$comic_>title}}</h1>
     <form action="{{ route('store') }}" method="POST">
 
         @csrf
@@ -28,8 +25,12 @@
            
         </div>
       
-        <button type="submit" class="btn btn-primary">Invia</button>
+        <button type="submit" class="btn btn-primary">Salva</button>
     </form>
-</div>
+
+
+
+
+
 
 @endsection

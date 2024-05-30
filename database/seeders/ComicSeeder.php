@@ -13,16 +13,17 @@ class ComicSeeder extends Seeder
     public function run(): void
     {
 
-        include __DIR__ .  './comics.php';
+        $comics = config('comics.php');
 
 
         foreach ($comics as $comic) {
             $new_comic = new Comic();
             $new_comic->title = $comic['title'];
             $new_comic->description = $comic['description'];
+            $new_comic->thumb = $comic['thumb'];
             $new_comic->price = $comic['price'];
             $new_comic->series = $comic['series'];
-            $new_comic->series = $comic['series'];
+            $new_comic->sale_date = $comic['sale_date'];
             $new_comic->type = $comic['type'];
             $new_comic->artists = $comic['artists'];
             $new_comic->writers = $comic['writers'];
