@@ -18,7 +18,14 @@
                             <div class="fw-bold fs-5 py-3">
                                 <a href="{{route('show', $comic)}}">{{ $comic->title }}</a>
                             </div>
-                            <a href="{{route('edit',$comic)}}">Modifica</a>
+                            <a href="{{route('edit', $comic)}}">Modifica</a>
+                            <form action="{{route('destroy', $comic)}}" method="POST">
+                                @method('DELETE')
+                                @csrf
+
+                                <button class="btn btn-link link-danger">Elimina</button>
+
+                            </form>
                         </div>
                         <div class="card-body">
                             <div class="py-3 ">

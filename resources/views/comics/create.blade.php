@@ -18,7 +18,7 @@
             <label for="image">Immagine</label>
             <input type="text" class="form-control" name="thumb" id="image" placeholder="URL http://...">
             <label for="price">Prezzo</label>
-            <input type="number" class="form-control" name="price" id="price" placeholder="prezzo">
+            <input type="number"  name="price" id="price" placeholder="prezzo">
             <label for="sale">Data di uscita</label>
             <input type="text" class="form-control" name="sale_date" id="sale" placeholder="data di uscita">
             <label for="series">Serie</label>

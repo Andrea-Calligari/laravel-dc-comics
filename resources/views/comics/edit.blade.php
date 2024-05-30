@@ -9,6 +9,7 @@
         @csrf
         <!--  metodo put = metodo post -->
         @method('PUT') 
+        
         <div class="form-group text-start mb-3">
             <label for="text">Titolo</label>
             <input type="text" name="title" class="form-control" id="text" aria-describedby="emailHelp" value="{{$comic->title}}" placeholder="titolo del fumetto">

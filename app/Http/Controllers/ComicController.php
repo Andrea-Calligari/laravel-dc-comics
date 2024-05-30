@@ -12,15 +12,15 @@ class ComicController extends Controller
 
          $comics = Comic::all();
 
-        return view('pages.index', compact('comics'));
+        return view('comics.index', compact('comics'));
     }
     public function show(Comic $comic)
     {
-        return view('pages.show', compact('comic'));
+        return view('comics.show', compact('comic'));
     }
     public function create()
     {
-        return view('pages.create');
+        return view('comics.create');
     }
     public function store(Request $request)
     {
@@ -48,7 +48,7 @@ class ComicController extends Controller
     }
     public function edit(Comic $comic)
     {
-        return view('pages.edit',compact('comic'));
+        return view('comics.edit',compact('comic'));
     }
     public function update(Request $request, Comic $comic)
     {
@@ -61,5 +61,12 @@ class ComicController extends Controller
         //fa subito il fill e il salvataggio 
         //possiamo usarla se dobbiamo fare le due operazioni insieme. Seno' prima utilizziamo il metodo fill() , facciamo quello che dobbiamo fare e poi il metodo save()
         return to_route('show', $comic);
+    }
+    public function destroy(Comic $comic)
+    {
+        
+        $comic->delete();
+        
+        return to_route('index');
     }
 }
