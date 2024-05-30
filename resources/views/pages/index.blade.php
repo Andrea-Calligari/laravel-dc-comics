@@ -15,9 +15,10 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-header text-center">
-
                             <div class="fw-bold fs-5 py-3">
-                            <a href="{{route('show', $comic)}}">{{ $comic->title }}</a></div >
+                                <a href="{{route('show', $comic)}}">{{ $comic->title }}</a>
+                            </div>
+                            <a href="{{route('edit',$comic)}}">Modifica</a>
                         </div>
                         <div class="card-body">
                             <div class="py-3 ">

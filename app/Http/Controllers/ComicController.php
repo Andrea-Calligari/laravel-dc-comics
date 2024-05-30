@@ -50,4 +50,16 @@ class ComicController extends Controller
     {
         return view('pages.edit',compact('comic'));
     }
+    public function update(Request $request, Comic $comic)
+    {
+        $form_data = $request->all();
+        // dump($form_data);
+        $comic->fill($form_data); // popola l'istanza sovrascrivndo - non fa il salvataggio 
+        $comic->save(); // salvataggio 
+        
+        // $comic->update(); 
+        //fa subito il fill e il salvataggio 
+        //possiamo usarla se dobbiamo fare le due operazioni insieme. Seno' prima utilizziamo il metodo fill() , facciamo quello che dobbiamo fare e poi il metodo save()
+        return to_route('show', $comic);
+    }
 }
