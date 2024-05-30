@@ -8,7 +8,7 @@
     <title>@yield('title','Home-page')</title>
 </head>
 
-<body>
+<body class="bg-warning">
 
     @include('./partials.header')
 
